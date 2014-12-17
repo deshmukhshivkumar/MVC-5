@@ -1,0 +1,98 @@
+﻿@model Mvc5AppV2.Models.Airport
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Airport</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AirportName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AirportName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CityCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CityCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CityName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CityName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StateCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StateCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CountryCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CountryCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Longitude)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Longitude)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Latitude)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Latitude)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TimeZoneCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TimeZoneCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsDomestic)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsDomestic)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Preference)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Preference)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.AirportCode }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

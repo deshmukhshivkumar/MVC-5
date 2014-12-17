@@ -1,0 +1,104 @@
+﻿@model Mvc5AppV2.Models.Airport
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Airport</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AirportName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AirportName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CityCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CityCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CityName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CityName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StateCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StateCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CountryCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CountryCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Longitude)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Longitude)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Latitude)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Latitude)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TimeZoneCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TimeZoneCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsDomestic)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsDomestic)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Preference)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Preference)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
